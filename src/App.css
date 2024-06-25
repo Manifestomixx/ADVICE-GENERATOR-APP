@@ -25,6 +25,7 @@
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-size: 14px;
 }
 
 .text{
@@ -33,6 +34,7 @@
   font-weight: 800;
   font-style: normal;
   font-size: 28px;
+  
 }
 
 .dice{
@@ -44,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 30px;
 }
 .dice:hover{
   box-shadow: 0px 0px 20px #52FEAA;
@@ -52,18 +54,18 @@
 
 
 /* Screen responsiveness  */
-@media (max-width: 1440px){
+@media (min-width:1140px){
   .box{
-    width: 500px;
-    height: 300px;
+    width: 800px;
+    height: 400px;
   }
 }
 
-@media (min-width: 375px){
+/* @media (min-width: 375px){
   .box{
     width: 350px;
     height: 400px;
   }
-}
+} */
 
 

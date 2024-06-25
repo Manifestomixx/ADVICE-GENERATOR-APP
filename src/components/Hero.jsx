@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import icon from "../assets/icon-dice.svg";
-import divider from "../assets/pattern-divider-mobile.svg"
+import divider from "../assets/pattern-divider-desktop.svg"
 
 const Hero = () => {
   const [data,setData] = useState([]);
@@ -22,10 +22,10 @@ console.log(data);
     <>
     <main className='bg'>
         <section className='container'>
-          <div className='box p-5 rounded-3 position-relative '>
-            <p className='head'>ADVICE #{data.id} </p>
-            <p className='text-white text-center w-100 text'>“{data.advice}”</p>
-            <div className='d-flex w-100'>
+          <div className='box p-4 rounded-3 h-100 position-relative '>
+            <p className='head mb-3'>ADVICE #{data.id} </p>
+            <p className='text-white text-center text p-2'>“{data.advice}”</p>
+            <div className=' mb-3 w-100'>
                 <img src={divider} alt="" className='w-100' />
             </div>
         </div>
