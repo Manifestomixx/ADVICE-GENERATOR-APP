@@ -66,7 +66,7 @@
 /* Screen responsiveness  */
 @media (min-width:1140px){
   .box{
-    width: 800px;
+    width: 500px;
     height: 400px;
   }
 }
