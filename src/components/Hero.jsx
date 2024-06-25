@@ -30,7 +30,7 @@ console.log(data);
             </div>
         </div>
         <div className='dice position-absolute start-50 translate-middle ' role='button' onClick={fetchRequest}>
-            <img src={icon} alt="" />
+            <img src={icon} alt="dice-button" />
         </div>
         </section>
     </main>
