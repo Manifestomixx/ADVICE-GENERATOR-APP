@@ -4,17 +4,24 @@ import divider from "../assets/pattern-divider-desktop.svg"
 
 const Hero = () => {
   const [data,setData] = useState([]);
+  const [isShadow, setIsShadow] = useState(false);
   const fetchRequest = async ()=>{
     try {
       const req = await fetch("https://api.adviceslip.com/advice");
       const res = await req.json();
       console.log(res);
-      setData(res.slip)
+      setData(res.slip);
+      toggleshadow();
     } catch (error) {
       console.log(error.message);
     }
   };
+  const toggleshadow = ()=>{
+    setIsShadow(!isShadow);
+  };
 console.log(data);
+
+
   useEffect(()=>{
     fetchRequest();
   },[])
@@ -29,7 +36,7 @@ console.log(data);
                 <img src={divider} alt="" className='w-100' />
             </div>
         </div>
-        <div className='dice position-absolute start-50 translate-middle ' role='button' onClick={fetchRequest}>
+        <div className={`dice position-absolute start-50 translate-middle ${isShadow ? 'shadowed' : ''}`} role='button' onClick={fetchRequest}>
             <img src={icon} alt="dice-button" />
         </div>
         </section>
