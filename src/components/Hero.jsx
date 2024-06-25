@@ -10,6 +10,7 @@ const Hero = () => {
   const fetchRequest = async ()=>{
     if (isLoading) return;
     setIsLoading(true);
+    setIsShadow(true);
 
     try {
       const req = await fetch("https://api.adviceslip.com/advice");
@@ -21,6 +22,7 @@ const Hero = () => {
       console.log(error.message);
     }finally{
       setIsLoading(false);
+      setTimeout(()=> setIsShadow(false), 200);
     }
   };
   const toggleshadow = ()=>{
