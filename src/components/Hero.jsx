@@ -40,7 +40,7 @@ console.log(data);
         <section className='container m-2'>
           <div className='box p-5 rounded-3 h-100 position-relative '>
             <p className='head mb-3'>ADVICE #{data.id} </p>
-            <p className='text-white text-center text p-2'>“{data.advice}”</p>
+            <p className='text-white text-center text w-100'>“{data.advice}”</p>
             <div className=' mb-3 w-100'>
                 <img src={divider} alt="" className='w-100' />
             </div>
