@@ -37,7 +37,7 @@ console.log(data);
   return (
     <>
     <main className='bg'>
-        <section className='container m-3'>
+        <section className='container m-2'>
           <div className='box p-5 rounded-3 h-100 position-relative '>
             <p className='head mb-3'>ADVICE #{data.id} </p>
             <p className='text-white text-center text p-2'>“{data.advice}”</p>
